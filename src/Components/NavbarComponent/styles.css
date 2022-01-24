@@ -1,0 +1,8 @@
+nav div img{
+    /* object-fist: contain; */
+    height: 40px;
+    width: 60px;
+    border-radius: 5px
+
+    /* margin-bottom: 40px; */
+}

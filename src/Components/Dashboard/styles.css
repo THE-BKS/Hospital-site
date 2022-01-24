@@ -1,0 +1,102 @@
+.dashboard .dashboard-heading{
+    /* width: 100%; */
+    display: flex;
+}
+.dashboard .dashboard-heading span{
+    background-color: rgb(240, 240, 240);
+    flex: 0.5;
+    height: 3rem;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid lightgray !important;
+}
+.dashboard .dashboard-heading span:hover{
+    background-color: lightgray;
+}
+.dashboard .dashboard-userList{
+    overflow-x: auto !important;
+    /* min-height: 80vh; */
+    margin: 2rem 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+table th{
+    background: #0059A3;
+    color: #fff;
+} 
+table.layout{
+    width: 100%;
+    border-collapse: collapse;
+}
+table.display th, table.display td{
+    /* border-bottom: 2px solid lightgray !important; */
+    text-align: left;
+    padding: .5em 1em;
+} 
+table.responsive-table td.message{
+    max-width: 30rem;
+}
+table.responsive-table{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+table.responsive-table tr:nth-child(even){
+    background: rgb(240, 240, 240);
+}  
+table.display tr:hover{
+    background: lightgray;
+}
+@media (max-width: 30em){
+    .dashboard .dashboard-userList{
+        box-shadow: none;  
+    }
+    table.responsive-table{
+        box-shadow: none;  
+    }
+    table.responsive-table thead{
+        display: none; 
+    }
+    table.display th, table.display td{
+        padding: .5em;
+    }
+    table.responsive-table td:nth-child(1):before{
+        content: 'S. No';
+    }
+    table.responsive-table td:nth-child(2):before{
+        content: 'Name';
+    }
+    table.responsive-table td:nth-child(3):before{
+        content: 'Ph. No';
+    }
+    table.responsive-table td:nth-child(4):before{
+        content: 'Date';
+    }
+    table.responsive-table td:nth-child(5):before{
+        content: 'Time';
+    }
+    table.responsive-table td:nth-child(6):before{
+        content: 'Message';
+    }
+    table.responsive-table td:nth-child(n){
+        padding-left: 25%;
+    }
+    table.responsive-table td:nth-child(n):before{
+        position: absolute;
+        left: .5em;
+        font-weight: bold;
+    }
+    table.responsive-table tr, table.responsive-table td{
+        display: block;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+    }
+    table.responsive-table td{
+        border-top: none;
+    }
+    table.responsive-table td.index{
+        background: #0059A3;
+        color: #fff;
+    }
+}

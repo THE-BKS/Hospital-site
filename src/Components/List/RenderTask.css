@@ -1,0 +1,24 @@
+.list-box{    
+    background-color: rgb(230, 227, 227);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 4rem;
+    padding: 0.3rem 1rem;
+}
+
+.list-box span{
+    font-size: 1.5rem;
+}
+
+.list-box button{
+    flex: 0.15;
+    min-width: 8rem;
+    font-size: 1.3rem !important;
+}
+
+.btnDiv{
+    min-width: 9rem;
+    display: flex;
+    justify-content: space-evenly;
+}
